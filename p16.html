@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: aqua;
+            border: 1px solid black;
+            /* transition-duration: 3s; */
+        }
+        @media (min-width:300px)  and (max-width:500px){
+            .box{
+               background-color: chartreuse;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        hellog
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transforms</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+
+        }
+        .child{
+            background-color: aqua;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:28px;
+            /* for centering the container at center use margin auto */
+            margin: auto;
+            transition: all;
+            transition-duration: 0.5s;
+            /* transition-timing-function: linear; */
+        }
+        .child:hover{
+            /* transform: rotate(-360deg); */
+            background-color: hotpink;
+            border-radius: 20px;
+             transform: scale(1.1); 
+            /* transform: skew(-45deg);  */
+           /* transform: translate(100px,-200px);  */
+           /* transform: matrix(20px);
+           transform: matrix(1, -0.3, 0, 1, 0, 0); */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child"><p>this is child box</p></div>
+    </div>
+</body>
+</html>

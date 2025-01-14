@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediaquery</title>
+    <style>
+        .container{
+            width: 600px;
+            min-height: 400px;
+            background-color: darksalmon;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+        .leftbox{
+            display: flex;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .box1{
+            height: 100px;
+            width: 200px;
+            background-color: hotpink;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            height: 100px;
+            width: 200px;
+            background-color:green;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rightbox{
+            height: 50%;
+            width: 50%;
+        }
+        .rightbox img{
+            height: 100%;
+            width: 90%;
+        }
+        @media (max-width:400px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftbox">
+              <div class="box1">Text1</div>
+              <div class="box2">Text2</div>
+        </div>
+        <div class="rightbox">
+            <img src="photo-1503376780353-7e6692767b70.avif" alt="Car">
+        </div>
+    </div>
+</body>
+</html>

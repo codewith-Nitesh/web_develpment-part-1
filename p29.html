@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color:gray;
+            padding: 3rem;
+        }
+        .scale{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+        .scale:hover{
+            transform: perspective(300px) rotateX(30deg) ScaleZ(1.2);
+            transition-duration: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scale">Scalez</div>
+    </div>
+    
+</body>
+</html>

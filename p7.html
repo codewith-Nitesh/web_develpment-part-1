@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(233, 144, 12);
+            border: 2px solid black;
+        }
+        .box{
+            width: 200px;
+            height: 80px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightmovement;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-delay: 3s;
+            /* animation-timing-function: ease;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: linear;
+            animation-timing-function: ease-in-out; */
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate;
+            animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
+            animation-play-state: paused;
+            animation-play-state: running;
+            animation: rightmovement 5s linear 2s infinite alternate ;
+        }
+        @keyframes rightmovement{
+           from { 
+            top: 0;
+            left: 0;
+            }
+           to{
+            top: 0;
+            left: 1000px;
+            }
+        }
+        .box2{
+            width: 200px;
+            height: 80px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: leftmovement;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-delay: 3s;
+            /* animation-timing-function: ease;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: linear;
+            animation-timing-function: ease-in-out; */
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate;
+            animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
+            animation-play-state: paused;
+            animation-play-state: running;
+            animation: leftmovement 5s linear 2s infinite alternate ;
+        }
+        @keyframes leftmovement{
+            from{
+                top: 400px;
+                left: 0;
+            }
+            to{
+                top:400px;
+                left: 1000px;
+            }
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 100px;
+            margin: 10px;
+            position: relative;
+            top: 20%;
+            left: 40%;  
+            animation: circle 5s linear 2s infinite alternate ; 
+        }
+        @keyframes circle{
+          0%{
+            top: 1%;
+            left: 5%;
+          }
+          30%{
+            top:5%;
+            left:90%;
+          }
+          50%{
+            top: 12%;
+            left: 40%;
+          } 
+          60%{
+            top: 30%;
+            left: 40%;
+
+          }
+          100%{
+            top: 1%;
+            left: 80%;
+          }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

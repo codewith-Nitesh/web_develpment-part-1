@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 1280px;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header{
+            margin: 0 auto;
+            max-width: 1280px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .heading{
+            text-align: center;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            grid-template-rows: repeat(3,300px);
+            grid-gap: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        @media screen and (max-width:967px) {
+            .content{
+                grid-template-columns: repeat(2,300px);
+            }
+        }
+        @media screen and (max-width:645px){
+            .content{
+                grid-template-columns: repeat(1,300px);
+            }
+        }
+        .card{
+            margin: auto auto;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        .card:hover{
+            transition-duration: 0.2s;
+            box-shadow: 1px 1px 15px rgb(24, 23, 23);
+            transition-duration: 0.5s;
+            transform: scale(1.05);
+        }
+        .card img{
+            height: 100%;
+            width: 100%;
+            filter: grayscale(100%);
+        }
+        .card:hover img{
+            filter: grayscale(0%);
+            transition-duration: 0.5s;
+            transform: scale(1.05);
+        }
+        span{
+            position: absolute;
+            opacity: 1;
+            z-index: 1;
+            top: 90.5%;
+            right: 70%;
+            opacity: 0;
+            height: 20px;
+            width: 80px;
+            transform: translateX(-50%) translateY(50%);
+        }
+        .card:hover span{
+            color: white;
+            font-weight:bold;
+            transform: scale(1.2);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="heading">
+                <h1>My Gallery</h1>
+            </div>
+        </div>
+      <div class="content">
+        <!-- card1 -->
+        <div class="card">
+            <img src="image1.jpg" alt="img">
+            <span>Image1</span>
+        </div>
+        <!-- card2 -->
+        <div class="card">
+            <img src="image2.jpeg" alt="img">
+            <span>Image2</span>
+        </div>
+        <!-- card3 -->
+        <div class="card">
+            <img src="image3.jpeg" alt="img">
+            <span>Image3</span>
+      </div>
+      <!-- card4 -->
+      <div class="card">
+        <img src="image4.jpeg" alt="img">
+        <span>image4</span>
+  </div>
+  <!-- card5 -->
+  <div class="card">
+    <img src="image5.jpeg" alt="img">
+    <span>Image5</span>
+    </div>
+    <!-- card6 -->
+    <div class="card">
+        <img src="image6.jpeg" alt="img">
+        <span>Image6</span>
+        </div>
+        <!-- card 7 -->
+        <div class="card">
+            <img src="image7.jpeg" alt="img">
+            <span>Image7</span>
+            </div>
+            <!-- card8 -->
+            <div class="card">
+                <img src="image8.jpeg" alt="img">
+                <span>Image8</span>
+                </div>
+                <!-- card9 -->
+                <div class="card">
+                    <img src="image9.jpeg" alt="img">
+                    <span>Image9</span>
+                    </div>
+</body>
+</html>

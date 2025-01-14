@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax website</title>
+    <style>
+           @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter',sans-serif;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+            perspective: 10px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transform-style: preserve-3d;
+            z-index: -1;
+        }
+        .background-1, .foreground-1{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .background-1{
+            transform: translateZ(-40px) scale(5.1);
+        }
+        .foreground-1{
+            transform: translateZ(-20px) scale(3);
+        }
+        .container h1{
+            letter-spacing: 3rem;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 7rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 0px 0px 10px rgba(45, 45, 45, 0.5);
+        }
+        .section{
+            background-color: rgb(63, 59, 59);
+           
+        }
+        .head_desc{
+            color: white;
+            padding: 2rem 0;
+            font-size: 5rem;
+            font-weight: 600;
+        }
+        .para{
+            color: white;
+            padding: 2rem 0;
+            text-align: left;
+            font-size: 1.3rem;
+        }
+        .bg1{
+            background-image: url(sport-1.jpg);
+        }
+        .bg2{
+            background-image: url(sport-2.jpg);
+        }
+        .bg3{
+            background-image: url(sport-3.jpg);
+        }
+        .bg{
+            height: 500px;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+        .content{
+            padding: 2rem 2rem;
+        }
+        .desc{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            padding: 1rem;
+            background-color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img src="background-1.png" alt="background-1" class="background-1">
+            <img src="foreground.png" alt="foreground-1" class="foreground-1">
+            <h1>ADVENTURE</h1>
+        </div>
+        <div class="section">
+            <div class="content">
+                <h2 class="head_desc">ADVENTURE TIME</h2>
+                <p class="para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, pariatur vero! Nobis nulla non aperiam et soluta facere dolore animi delectus, temporibus mollitia vitae, quod repudiandae in quasi reprehenderit, suscipit veniam quaerat commodi eaque molestias possimus repellat? Esse, eaque asperiores suscipit ab velit nam blanditiis aspernatur, dicta at alias laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur nisi nesciunt explicabo cupiditate? Dolores reprehenderit ad repellat vel quaerat rerum, natus omnis similique corrupti odit odio nemo recusandae suscipit, ullam quidem sint placeat porro aliquid, deserunt soluta qui? Ex sunt id tempora nisi exercitationem repellat necessitatibus quam omnis expedita?
+                    <br/><br/>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas enim nostrum debitis aliquid ad dignissimos temporibus mollitia dolorum placeat minima optio, numquam adipisci? Dolorum architecto repellat dicta beatae perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem voluptates beatae, officiis vero aspernatur vitae voluptatem odio deserunt debitis assumenda reprehenderit magni quia esse quis saepe. Quasi natus doloribus repellat earum. Unde nostrum quaerat dolor soluta ratione dolore, laudantium consectetur cumque quidem autem velit perferendis, nobis accusantium amet? Iusto?
+                </p>
+            </div>
+            <div class="bg bg1">
+                <h2 class="desc">RIDING</h2>
+            </div>
+            <div class="content">
+                <div class="para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, pariatur vero! Nobis nulla non aperiam et soluta facere dolore animi delectus, temporibus mollitia vitae, quod repudiandae in quasi reprehenderit, suscipit veniam quaerat commodi eaque molestias possimus repellat? Esse, eaque asperiores suscipit ab velit nam blanditiis aspernatur, dicta at alias laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis impedit similique atque molestias rerum repudiandae hic perferendis, optio natus eaque inventore laboriosam exercitationem nulla, ex possimus vero? Explicabo, ullam nam fuga asperiores odio doloribus incidunt aliquid temporibus voluptatum. Esse possimus est nisi quaerat quos corrupti, alias nulla quod perspiciatis? Suscipit.
+                    <br/><br/>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas enim nostrum debitis aliquid ad dignissimos temporibus mollitia dolorum placeat minima optio, numquam adipisci? Dolorum architecto repellat dicta beatae perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ipsum, esse magni placeat, repellendus, alias quis similique laborum debitis id doloremque quasi delectus corporis illum. Nostrum culpa aspernatur, hic facilis minima consequuntur possimus ratione. Neque eum aliquid, aperiam impedit iure reiciendis nisi suscipit ipsam accusantium minus optio. Sunt, dicta porro.
+                </p>
+                </div>
+            </div>
+            <div class="bg bg2">
+                <h2 class="desc">PARA GLIDING</h2>
+            </div>
+            <div class="content">
+                <div class="para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, pariatur vero! Nobis nulla non aperiam et soluta facere dolore animi delectus, temporibus mollitia vitae, quod repudiandae in quasi reprehenderit, suscipit veniam quaerat commodi eaque molestias possimus repellat? Esse, eaque asperiores suscipit ab velit nam blanditiis aspernatur, dicta at alias laborum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro unde provident possimus laudantium sed animi architecto alias blanditiis odit, perspiciatis molestiae optio. Iure praesentium perspiciatis deleniti totam alias repudiandae! Dolorum deleniti quo quam eum, esse debitis! Rerum, sunt? Odio dicta delectus eos autem maxime vitae exercitationem, adipisci error natus vel?
+                    <br/><br/>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas enim nostrum debitis aliquid ad dignissimos temporibus mollitia dolorum placeat minima optio, numquam adipisci? Dolorum architecto repellat dicta beatae perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestiae dolorum culpa sint ea quae, et velit assumenda itaque officia ratione. Magnam incidunt placeat inventore magni deserunt vero voluptatibus veniam, dicta autem natus maxime minus temporibus explicabo aspernatur expedita aut fugiat numquam possimus ratione. Consequuntur eaque ipsam numquam iure illum!
+                </p>
+                </div>
+            </div>
+          
+            <div class="bg bg3">
+                <h2 class="desc">SURFING</h2>
+            </div>
+            <div class="content">
+                <div class="para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, pariatur vero! Nobis nulla non aperiam et soluta facere dolore animi delectus, temporibus mollitia vitae, quod repudiandae in quasi reprehenderit, suscipit veniam quaerat commodi eaque molestias possimus repellat? Esse, eaque asperiores suscipit ab velit nam blanditiis aspernatur, dicta at alias laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, natus possimus alias, error neque delectus exercitationem ullam voluptas explicabo aperiam quo doloremque dolore corporis ipsam obcaecati! Commodi nesciunt asperiores debitis architecto eligendi sed quaerat laudantium dolor deserunt assumenda, veritatis facilis minima totam. Vel at iure omnis sapiente eligendi maxime consequatur.
+                    <br/><br/>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas enim nostrum debitis aliquid ad dignissimos temporibus mollitia dolorum placeat minima optio, numquam adipisci? Dolorum architecto repellat dicta beatae perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam autem quasi nihil aliquid quo veritatis quibusdam commodi, cumque eius rem perspiciatis repellendus, aspernatur obcaecati accusantium distinctio molestias rerum ab. Possimus consectetur labore a numquam omnis recusandae enim voluptate soluta aperiam quos ut eveniet libero molestiae, veniam molestias nisi quis?
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

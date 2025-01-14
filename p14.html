@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(blue,hotpink,red,yellow,green);
+        }
+        .card{
+            width: 350px;
+            height: 600px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 75%;
+            text-align: center;
+        }
+        #amountbox{
+            width: 80%;
+            height: 10%;
+            background-color:blueviolet;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .leftbox{
+            display: flex;
+            gap: 15px;
+            height: 100%;
+            align-items: center;
+
+        }
+        .leftbox img{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 40px;
+        }
+        .rightbox a{
+            color: white;
+            transition-duration: 0.3s;
+        }
+        .rightbox a:hover{
+            color: black;
+        }
+        #Paymentbutton{
+            width: 80%;
+            height: 10%;
+            background-color:gray;
+            border-radius: 10px;
+            font-size: 1.3em;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            transition-duration: 0.3s;
+           
+        }
+        #Paymentbutton:hover{
+            background-color: rgb(24, 22, 22);
+        }
+        #paymentbutton:focus{
+            outline: none;
+        }
+        .cancelbox a{
+            font-size: 1.2em;
+            /* text-decoration: none; */
+            font-weight: bold;
+        }
+        .cancelbox a:hover{
+            text-decoration: none;
+            color: gray ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="download.jpeg" alt="img">
+            <div class="textbox">
+                <h2>Order summary</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quasi tenetur ipsum similique voluptatem doloribus omnis debitis a tempore recusandae.</p>
+            </div>
+          <div id="amountbox">
+              <div class="leftbox">
+                <div class="imgbox">
+                    <img src="musicicon.png" alt="Music">
+                </div>
+                <div class="amounttextbox"><p>Amount</p>
+                <p>$99.9/year</p></div>
+              </div>
+              <div class="rightbox">
+                <a href="https://www.amazon.com" target="_blank">change</a>
+              </div>
+          </div>
+          <button id="Paymentbutton" type="button">
+            Proceed to payment
+          </button>
+          <div class="cancelbox">
+            <a href="https://wwww.facebook.com" target="_blank"><strong>CancelBox</strong></a>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
