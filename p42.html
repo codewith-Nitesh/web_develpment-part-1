@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: bisque;
+        }
+        .card{
+            height: 350px;
+            width: 700px;
+            border: 0px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            display: flex;
+            gap: 0.3rem;
+            /* align-items: center; */
+        }
+        /* @media screen and (min-width:1585px) {
+            .card{
+                flex-direction: row;
+            }
+        } */
+        .rightpart{
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+        }
+        .rightpart img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .rightpart:hover img{
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+            /* opacity: 0.5; */
+        }
+        .leftpart{
+            height: 100%;
+            width: 50%;
+            padding-top: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.3rem;
+            text-align: left;
+            position: relative;
+        }
+        .desc{
+             color: rgb(92, 87, 87);
+             font-weight: bold;
+        }
+        .heading{
+            color: rgb(92, 87, 87);
+            letter-spacing: 0.3rem;
+        }
+        .price{
+            display: flex;
+            flex-direction: row;
+            gap: 1.2rem;
+            align-items:center;
+            
+        }
+        .actual_price{
+            color: darkgreen;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        #add_to_cart{
+            width: 80%;
+            height: 10%;
+            background-color: darkgreen;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 1.3rem;
+            border: 1px solid black;
+            border-radius: 8px;
+            gap: 1.5rem;
+            position: absolute;
+            top: 18rem;
+            right: 2.3rem;
+        }
+        .text{
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .logo{
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+        .logo img{
+            height: 100%;
+            width: 100%;
+        }
+        .fake_price{
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="rightpart">
+                 <img src="mug-mobile.jpg" alt="mug" class="mug_coffee">
+            </div>
+            <div class="leftpart">
+              <span class="heading">
+                 COFFEE MUG
+              </span>
+              <h1>
+                 White Coffee Mug 
+              </h1>
+               <p class="desc">
+                 Coffee Mugs are designed to express emotions.These are acclaimed for their amazing designs & superior quality.
+               </p>
+               <div class="price">
+                 <span class="actual_price">$149</span>
+                 <del class="fake_price">$230</del>
+               </div>
+               <button id="add_to_cart" type="button">
+                <div class="logo">
+                   <img src="shopping-cart (1).png" alt="shopping-cart">
+                </div>
+                <div class="text">
+                    Add To Cart
+                </div>
+            </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

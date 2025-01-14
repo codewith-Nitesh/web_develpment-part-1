@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardproject-3</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 800px;
+        height: 400px;
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        border: 0px solid black;
+        overflow: hidden;
+    }
+    .leftbox{
+        width: 50%;
+        height: 100%;
+        background-color: purple;
+        padding: 50px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        gap: 50px;
+        text-align: center;
+    }
+    .leftbox:hover{
+        background-color: rgb(68, 2, 68);
+    }
+    .rightbox{
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .rightbox img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .rightbox:hover img{
+        transform: scale(1.1);
+        transition: all 0.2s ease-in;
+    }
+
+    .div{
+        display: flex;
+        gap: 50px;
+    }
+    .div1:hover{
+        color: yellow;
+    }
+    .div2:hover{
+        color: yellow;
+    }
+    .div3:hover{
+        color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftbox">
+            <h1>Get insights that help you business grow</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime omnis eveniet blanditiis, excepturi quo odio dolorem. At, reiciendis. Perspiciatis, totam!</p>
+             <div class="div">
+                <div class="div1">
+                  <h2>10k+</h2>
+                  <p>comments</p></div>
+                  <div class="div2">
+                  <h2>214</h2>
+                  <p>Paid Users</p></div>
+                  <div class="div3">
+                  <h2>12M+</h2>
+                  <p>Views</p></div>
+             </div>
+        </div>
+        <div class="rightbox">
+            <img src="photo-1503376780353-7e6692767b70.avif" alt="car">
+        </div>
+    </div>
+</body>
+</html>

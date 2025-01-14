@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: relative;
+            height: 400px;
+            width: 400px;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+        }
+        .container img, span{
+            position: absolute;
+        }
+        span{
+            top: 90%;
+            left: 10%;
+            /* transform: translateX(-50%) translateY(50%); */
+            opacity: 0;
+            height: 20px;
+            width: 100px;
+        }
+        .container:hover span{
+            opacity: 1;
+            transition-duration: 0.5s;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image1.jpg" alt="image">
+        <span>My image</span>
+    </div>
+</body>
+</html>

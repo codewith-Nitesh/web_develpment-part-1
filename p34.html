@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: aquamarine;
+            gap: 1rem;
+            padding: 4rem;
+            display: grid;
+           /* grid-template-columns: repeat(1,1fr);
+           grid-template-rows: repeat(8,1fr); */
+           grid-template-areas: 
+            "content1"
+            "header"
+            "content2"
+            "content3"
+            "content4"
+            "content5"
+            "content6"
+            "sidebar"
+            ;
+        }
+        .item{
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width:750px){
+            .container{
+                grid-template-areas: 
+            "content1 header header"
+            "content2 content2 content3"
+            "content4 content5 sidebar"
+            "content6 content6 sidebar"
+            ;
+            }
+        }
+       #content1{
+           grid-area: content1;
+       }
+       #header{
+        grid-area: header;
+       }
+       #content2{
+        grid-area: content2;
+       }
+       #content3{
+        grid-area: content3; 
+       }
+       #content4{
+        grid-area: content4;
+       }
+       #content5{
+        grid-area: content5;
+       }
+       #content6{
+        grid-area: content6;
+       }
+       #sidebar{
+        grid-area: sidebar;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="content1">content1</div>
+        <div class="item" id="header">header</div>
+        <div class="item" id="content2">content2</div>
+        <div class="item" id="content3">content3</div>
+        <div class="item" id="content4">content4</div>
+        <div class="item" id="content5">content5</div>
+        <div class="item" id="content6">content6</div>
+        <div class="item" id="sidebar">sidebar</div>
+    </div>
+</body>
+</html>

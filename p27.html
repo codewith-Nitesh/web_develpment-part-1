@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all;  
+            margin: auto;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+            opacity: 0.5;
+        }
+        .container:hover img{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+            /* transition-timing-function: linear; */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="photo-1503376780353-7e6692767b70.avif" alt="car">
+    </div>
+</body>
+</html>

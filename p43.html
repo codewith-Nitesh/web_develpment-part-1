@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0%;
+           box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100vh;
+        }
+        .card{
+            position: relative;
+            width: 30%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        figure.card img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0 0 20px #333;
+        }
+        figcaption{
+            position: absolute;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="heading">
+                <h1>My Gallery</h1>
+            </div>
+        </div>
+        <figure class="card">
+            <img src="image1.jpg" alt="img1" class="image1">
+            <figcaption>
+                image1
+            </figcaption>
+        </figure>
+    </div>
+</body>
+</html>
